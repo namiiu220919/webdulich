@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: tahoma;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #00396b;
+    text-align: center;
+    opacity: 80%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+.nav-item a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    transition: all .42s;
+    text-decoration: none;
+
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: -2px;
+    left: 0;
+    transition: .42s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}
+
+.carousel-caption::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.carousel-caption h3,
+.carousel-caption p
+{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.anh {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.anh h3 {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 47%;
+    display: flex;
+    justify-content: center;
+    font-style: uppercase;
+}
+
+.anh:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.anh:hover {
+    opacity: 80%;
+    transition: all .42s;
+}
+
+p {
+    line-height: 30px;
+}
+
+.about-us {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us button {
+    font-weight: bold;
+    font-size: .875rem;
+    line-height: 17px;
+    color: #fff !important;
+    background: #d6a022;
+    padding: 17px 60px;
+    margin: 20px;
+    transition: all .3s linear;
+    border: none;
+}
+
+.about-us button:hover {
+    background: #00396b;
+    color: #fff
+}
+
+.about-us img {
+    margin-bottom: 20px;
+}
+
+h3.head-title,
+.section-header h2 {
+    font-weight: bold;
+    font-size: 2.625rem;
+    color: #00396b;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+hr {
+    background: url(image/hr.png) no-repeat 50%;
+    border: none;
+    background-size: contain;
+    width: 64px;
+    height: 10px;
+    display: inline-block
+}
+
+.banner {
+    background: url(image/ha-noi.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.banner::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* giữ tỷ lệ khung hình và cắt bớt nếu cần thiết */
+}
+
+.chu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+}
+.lead{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 10px;
+    font-size:medium;
+}
+.card{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 15px;
+
+}
+
+.card-title{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #686868;
+    font-size:x-large;
+    padding-top:10px ;
+    
+}
+
+.card img{
+    border-radius: 0;
+}
+.card button {
+    font-weight: bold;
+    font-size: .875rem;
+    line-height: 17px;
+    color: #fff !important;
+    background: #d6a022;
+    padding: 10px 80px;
+
+    transition: all .3s linear;
+    border: none;
+}
+.card button:hover {
+    background: #00396b;
+    color: #fff
+}
+footer{
+    padding-top: 20px;
+    background-image: url(image/banner2.jpg) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #00396b;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.box-footer{
+    background: none;
+    position: relative;
+    z-index: 2;
+    
+}
+.box-footer p{
+    line-height: 15px;
+    color: white;
+}
+.box-footer h3{
+    color: white;
+}
+.box-footer hr{
+    padding: 0px ;
+    color: white;
+    background-image: none;
+}
+.icon-new{
+    display: flex;
+    padding-top: 10px;
+}
+.icon{
+    display: flex;
+    background-color: lightgray;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.anhAboutus:hover{
+    transform: scale(0.9);
+    transition: all 2s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner {
+        height: 80vh;
+    }
+
+    .text {
+
+        width: 90%;
+    }
+    .card{
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card{
+        width: 100%;
+        margin-left: 10px;
+        
+    }
+    #demo{
+        margin-top: 18%;
+    }
+    
+    .carousel-caption{
+        display: none;
+    }
+    
+}

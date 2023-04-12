@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: tahoma;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #00396b;
+    text-align: center;
+    opacity: 80%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+.nav-item a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px;
+    transition: all .42s;
+    text-decoration: none;
+
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: -2px;
+    left: 0;
+    transition: .42s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+}   
+
+.carousel-caption::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.carousel-caption h3,
+.carousel-caption p
+{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.tin{
+    margin-bottom:30px ;
+}
+.tin h3{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #00396b;
+    margin-top: 0;
+    margin-bottom: 0
+}
+h4{
+    text-align: center;
+    color: #d6a022;
+    font-weight: 600;
+    padding: 5px;
+}
+.formdk{
+    margin: 0 auto;
+}
+.group1 input{
+    width: 40.5%;
+    margin: 0 5px;
+    border: 1px solid gray;
+    background: #fff;
+    padding: 15px 15px;
+}
+input{
+    margin-top: 15px;
+    width: 83.5%;
+    border: 1px solid gray;
+    background: #fff;
+    padding: 15px 15px;
+}
+.formdk input[type="tel"]{
+    margin-top: 15px;
+    width: 83.5%;
+    height: 150px;
+    border: 1px solid gray;
+    background: #fff;
+    padding: 1px 15px ;
+}
+.formdk input[type="submit"]{
+    background: #d6a022;
+    width: 30%;
+    border: none;
+    color: white;
+}
+.formdk input[type="submit"]:hover{
+    background: #00396b;
+    transition: all .42s;
+}
+footer{
+    padding-top: 20px;
+    background-image: url(image/banner2.jpg) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #00396b;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.box-footer{
+    background: none;
+    position: relative;
+    z-index: 2;
+    
+}
+.box-footer p{
+    line-height: 15px;
+    color: white;
+}
+.box-footer h3{
+    color: white;
+    font-weight: lighter;
+}
+.box-footer hr{
+    padding: 0px ;
+    background-image: none;
+}
+.icon-new{
+    display: flex;
+    padding-top: 10px;
+}
+.icon{
+    display: flex;
+    background-color: lightgray;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#top-up {
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    color: #004993;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+}
+
+#top-up:hover {
+    color: #333
+}
+@media screen and (max-width: 575px) {
+    .carousel-caption{
+        display: none;
+    }
+    #demo{
+        margin-top: 18%;
+    }
+}

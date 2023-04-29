@@ -99,7 +99,7 @@
     height: 300px;
 }
 
-.anh h3 {
+.anh h3 a{
     color: white;
     position: absolute;
     width: 100%;
@@ -107,6 +107,10 @@
     display: flex;
     justify-content: center;
     font-style: uppercase;
+    text-decoration: none;
+}
+.anh h3 a:hover{
+    text-decoration: underline;
 }
 
 .anh:before {
